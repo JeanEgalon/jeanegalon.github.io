@@ -6,73 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Jean Freitas</title>
-
-    <style>
-        #fonte-para-nome {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        p {
-            font-family: sans-serif;
-        }
-
-        body {
-            background-color: #59C9A5;
-        }
-
-        .primeiroElemento{
-            font-size: 30px;
-        }
-
-        .segundoElemento{
-            font-size: 20px;
-        }
-
-        .terceiroElemento{
-            font-size: 15px;
-        }
-
-        .quartoElemento{
-            font-size: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h2>Indice</h2>
-    <ol>
-        <li><a href="#apresentação">Apresentação</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#links">Links</a></li>
-    </ol>
+    <div class="barra-superior">
+        <div class="centralização-apresentação botoes">
+            <p>
+                <a href="#sobre-mim">
+                    <strong>Sobre Mim</strong>
+                </a>
+            </p>
+        </div>
 
-    <h1>Bem Vindo!</h1>
+        <div class="centralização-apresentação botoes">
+            <p>
+                <a href="#habilidades">
+                    <strong>Habilidades</strong>
+                </a>
+            </p>
+        </div>
 
-    <h2 id="fonte-para-nome">Esse portifólio é de Jean de Freitas Egalon</h2>
+        <div class="centralização-apresentação botoes">
+            <p>
+                <a href="https://github.com/JeanEgalon" target="/blank">
+                    <img src="Github-icon.png" alt="Icone Github" id="icones">
+                </a>
+            </p>
+        </div>
 
-    <img src="Eu.jpg" alt="Uma foto minha" id="Eu">
+        <div class="centralização-apresentação botoes">
+            <p>
+                <a href="https://www.linkedin.com/in/jean-de-freitas-egalon-b998b217a/" target="/blank">
+                    <img src="linkedin-icon.png" alt="Icone Linkedin" id="icones">
+                </a>
+            </p>
+        </div>
+    </div>
 
-    <p id="apresentação"><em>Olá, Me chamo Jean tenho 28 anos natural e residente de <strong>Volta Redonda - RJ</strong>,
-            tenho essa carinha feia ai :)<br>
-            Já cheguei a cursar 1 período de <strong>Sistemas de Informação</strong> e também <strong>Ciencia da Computação</strong> mas foram cursos que
-            não me adaptei bem
-            por conta da falta de tempo para estudar pois sempre trabalhei bastante para ajudar em casa.</em></p>
+    <h1 class="inicio">Bem Vindo!</h1>
 
-    <h2 id="habilidades">Habilidades</h2>
+    <h2 class="inicio">Esse portifólio é de Jean de Freitas Egalon</h2>
 
-    <ul>
-        <li class="primeiroElemento">Dedicado</li>
-        <li class="segundoElemento"><strong>Esforçado</strong></li>
-        <li class="terceiroElemento"><strong>Autocrítico</strong></li>
-        <li class="quartoElemento">Flexibilidade</li>
+    <div class="organizar-foto-declaracao">
+        <div>
+            <img src="Eu.jpg" alt="Uma foto minha" class="minha-foto">
+        </div>
+
+        <p id="sobre-mim">Oi, Me chamo Jean de Freitas natural de Volta Redonda - RJ e comecei a me interessar por
+            programação por volta dos meus 19 anos quando tive a oportunidade de ver como é um OTServer de PokeTibia,
+            jogo esse que eu jogava na época
+            e com muito esforço e dedicação comecei a editar uma versão que tinha
+            disponivel no fórum do xTibia e a disponibilizei para o público no ano era 2013, durante esse periodo a
+            saude da minha mãe começou a ficar ruim
+            e a maior parte do tempo que antes tinha para editar o servidor ou livre fiquei ajudando ela nas tarefas em
+            casa e também cuidado dela. <br>
+            Após alguns anos minha irmã veio morar conosco e com isso consegui mais tempo livre onde comecei a cursar
+            Sistemas de Informação mas por problemas financeiros
+            não pude continuar no curso, dois anos após esse ocorrido tentei cursar Ciencia da Computação mas a saude de
+            minha mãe piorou e ela precisaria novamente de mim
+            isso ocorreu no final de 2019, no começo de 2020 a pandemia afetou o planeta inteiro e por medo dela pegar
+            esse virus eu evitei sair de casa o máximo possivel. <br>
+            Agora como as coisas estão ficando mais tranquilas conheci a Trybe atraves do FlowPodcast resolvi recomeçar
+            o sonho de ser Desenvolvedor e aqui estou :)
+        </p>
+    </div>
+
+    <h2 id="habilidades" class="organizar-foto-declaracao">Essas são algumas habilidades que estou aprendendo na Trybe</h2>
+
+    <ul class="organizar-foto-declaracao">
+        <li>Soft-Skills</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.JS</li>
+        <li>Python</li>
     </ul>
 
-    <p id="links">Links</p>
-    <ul>
-        <li> <a href="#Eu">Foto Perfil</a></li>
-        <a href="https://www.youtube.com/" target="blank">Site que gosto</a>
-    </ul>
 </body>
 
 </html>
